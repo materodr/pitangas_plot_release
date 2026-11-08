@@ -1,0 +1,55 @@
+name: bug-report
+description: Something in pitangas_plot doesn't work as it should.
+title: "[Bug]: "
+labels: ["bug-report"]
+body:
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: Describe what the app did.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: Describe what you expected the app to do instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The steps that make the problem happen, one per line.
+      placeholder: |
+        1. Open the file ...
+        2. Click ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: operating_system
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: The number shown under "Designed by materodr" in the top right corner of the app, for example v1.018.
+      placeholder: v1.018
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files or screenshots
+      description: Optional. Drag files or screenshots here to attach them.
+    validations:
+      required: false

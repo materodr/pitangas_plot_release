@@ -1,0 +1,26 @@
+name: feature-suggestion
+description: Suggest something new that pitangas_plot could do.
+title: "[Feature]: "
+labels: ["feature-suggestion"]
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What you would like the app to do
+      description: Describe the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help you
+      description: What you would use it for.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: Optional. An example, a sketch or a screenshot of how it could look.
+    validations:
+      required: false
